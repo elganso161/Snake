@@ -2,7 +2,6 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-const secondCommit;
 
 const background = new Image();
 background.src = 'img/background.png';

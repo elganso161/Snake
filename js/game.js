@@ -2,8 +2,7 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-// let arr = [];
-// arr.push(img/food.png);
+const secondCommit;
 
 const background = new Image();
 background.src = 'img/background.png';

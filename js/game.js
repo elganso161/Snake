@@ -2,12 +2,18 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-
 const background = new Image();
 background.src = 'img/background.png';
 
+  let foodArr = ['img/grapes.png', 'img/food.png', 'img/kiwi.png'];
+  let foo = '';
+  for (let i = 0; i < foodArr.length; i++) {
+    foo = foodArr[Math.floor(Math.random() * foodArr.length)];
+  };
+
 const foodImg = new Image();
-foodImg.src = 'img/food.png';
+foodImg.src = foo;
+
 
 let box = 32;
 
@@ -89,6 +95,7 @@ let newHead = {
 eatTail(newHead, snake);
 
 snake.unshift(newHead);
+
 }
 
 let game = setInterval(drawGame, 100);
